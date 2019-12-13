@@ -18,8 +18,14 @@ const App = () => {
   return(
     <div className="App">
       <form className="search-form">
-        <input type="search-bar" />
-        <button className="search-button">Submit</button>
+        <input className="search-bar" type="text" />
+        <button
+          className="search-button"
+          type="submit"
+        >
+          Submit
+        </button>
+        <h2 onClick={() => setCounter(counter + 1)}>{counter}</h2>
       </form>
     </div>
   )
