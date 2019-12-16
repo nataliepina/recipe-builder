@@ -51,7 +51,7 @@ const App = () => {
         </button>
       </form>
       {recipes.map(recipe => (
-      <div className="recipes" onClick={e => window.location.href=recipes.recipe.url}>
+      <div className="recipes" onClick={e => window.location.href=recipe.recipe.url}>
         <Recipe 
           title={recipe.recipe.label}
           calories={"Total Calories: " + Math.floor(recipe.recipe.calories)}
