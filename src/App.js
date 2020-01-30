@@ -5,7 +5,7 @@ import './App.css'
 const App = () => {
   const [recipes, setRecipes] = useState([])
   const [search, setSearch] = useState('')
-  const [query, setQuery] = useState('chicken')
+  const [query, setQuery] = useState('recipe')
 
   const app_id = process.env.REACT_APP_API_ID
   const app_key = process.env.REACT_APP_API_KEY
@@ -34,7 +34,7 @@ const App = () => {
 
   return(
     <div className="App">
-      <h1><i class="fas fa-utensils"/> Recipe Search</h1>
+      <h1><i className="fas fa-utensils"/> Recipe Search</h1>
       <form className="search-form" onSubmit={getSearch}>
         <input
           className="search-bar"
@@ -57,7 +57,7 @@ const App = () => {
           calories={"Total Calories: " + Math.floor(recipe.recipe.calories)}
           image={recipe.recipe.image}
           ingredients={recipe.recipe.ingredients}
-          key={recipe.recipe.id}
+          key={recipe.id}
         />
       </div>
       ))}
