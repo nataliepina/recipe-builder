@@ -45,3 +45,12 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+.recipe-title:hover {
+  color: #668d2c;
+}
+
+.recipe-calories {
+  text-transform: uppercase;
+  font-size: 14px;
+}
