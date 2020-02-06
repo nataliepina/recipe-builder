@@ -46,6 +46,15 @@
   flex-wrap: wrap;
 }
 
+.recipe-title {
+  text-align: center;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;  
+  text-overflow:    ellipsis;   
+}
+
 .recipe-title:hover {
   color: #668d2c;
 }
